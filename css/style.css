@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Score Board';
+    src: url('../fonts/ScoreBoard.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 1200px;
+  font-family: 'Score Board';
+  font-size: 30px;
+  background-color: black;
+  color: red;
+}
+
+/* Scoreboard section */
+
+.score {
+  width: 100px;
+  height: 90px;
+  border: 1px solid white;
+  font-size: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+#scoreTable {
+  margin: 0 30%;
+  width: 400px;
+  margin-bottom: 5px;
+}
+
+#table {
+  padding: 0px 32%;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+#scorePlayer::before, #scoreTie::before, #scoreComputer::before {
+  font-size: 25px;
+  color: orange;
+  margin-top: -30px;
+  display: block;
+}
+
+#scorePlayer::before {
+  content: "PLAYER";
+}
+
+#scoreTie::before {
+  content: "TIES";
+}
+
+#scoreComputer::before {
+  content: "COMP";
+}
+
+/* Center section */
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+#bigCenter {
+  height: 300px;
+  width: 500px;
+  border: 1px solid red;
+}
+
+#options {
+  margin: 0 34%;
+}
+
+#half1 {
+  border-top: 300px solid navy;
+  border-right: 500px solid transparent;
+}
+
+#half2 {
+  border-bottom: 300px solid indianred;
+  border-left: 500px solid transparent;
+  margin-top: -300px;
+}
+
+#vs {
+  color: black;
+  font-weight: bold;
+  margin-left: 200px;
+  margin-top: -175px;
+  font-size: 55px;
+}
+
+#player, #computer {
+  font-size: 40px;
+  height: 1px;;
+}
+
+#player {
+  margin-top: -310px;
+  margin-left: 375px;
+}
+
+#computer {
+  margin-top: 160px;
+  margin-left: 615px;
+}
+
+#playerOption {
+  color: indianred;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: -25px;
+  transition: 1s;
+}
+
+#computerOption {
+  color: navy;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  width: 150px;
+  margin-top: 25px;
+  margin-left: -40px;
+  transition: 1s;
+}
+
+/* Selections section */
+
+.option {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.option:hover {
+  color: orange;
+}
+
+.option:active {
+  color: red;
+}
+
+/* Game log section */
+
+#stats {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: -220px;
+  margin-left: 72%;
+  font-size: 15px;
+}
+
+#stats:before {
+  content: "GAME LOG:";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Additional styling */
+
+.preAnimation {
+  opacity: 0;
+}
