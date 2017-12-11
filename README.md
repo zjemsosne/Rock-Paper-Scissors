@@ -10,4 +10,3 @@ A simple JS version of a classic game
 - [x] CSS
 - [x] JS
 - [ ] Lizard & Spock
-# Rock-Paper-Scissors
